@@ -5,9 +5,9 @@ class Index extends React.Component {
   render() {
     const { logs } = this.props
     return(
-        <div>
-        <h1>Logs Index Page</h1>
-        <Nav link="logs/new" text="Create a Ship!" />
+        <>
+        <h1>Logs Home</h1>
+        <Nav link="/logs/New" text="Create a Ship!"/>
         <ul>
             {logs.map((logs, i) => {
                     return (
@@ -30,7 +30,7 @@ class Index extends React.Component {
                     );
                 })}
           </ul>
-    </div>
+          </>
     )
    }
   }
